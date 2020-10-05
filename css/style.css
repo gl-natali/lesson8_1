@@ -1,0 +1,474 @@
+/* Подключение шрифтов */
+@font-face {
+   font-family: "Gilroy";
+   src: url("../font/transfonter.org-20200917-114617/Gilroy-Bold.woff") format("woff2"),
+      url("../font/transfonter.org-20200917-114617/Gilroy-Bold.woff") format("woff2"), format("woff");
+   font-weight: bold;
+   font-style: normal;
+   font-display: swap;
+}
+
+@font-face {
+   font-family: "Gilroy";
+   src: url("../font/transfonter.org-20200917-114617/Gilroy-Regular.woff2") format("woff2"),
+      url("../font/transfonter.org-20200917-114617/Gilroy-Regular.woff") format("woff");
+   font-weight: normal;
+   font-style: normal;
+   font-display: swap;
+}
+
+@font-face {
+   font-family: "Futura PT";
+   src: url("../font/transfonter.org-20201003-085137/FuturaPT-Demi.woff2") format("woff2"),
+      url("../font/transfonter.org-20201003-085137/FuturaPT-Demi.woff") format("woff");
+   font-weight: 500;
+   font-style: normal;
+   font-display: swap;
+}
+
+@font-face {
+   font-family: "Futura PT";
+   src: url("../font/transfonter.org-20201003-085137/FuturaPT-Light.woff2") format("woff2"),
+      url("../font/transfonter.org-20201003-085137/FuturaPT-Light.woff") format("woff");
+   font-weight: 300;
+   font-style: normal;
+   font-display: swap;
+}
+
+@font-face {
+   font-family: "Futura PT";
+   src: url("../font/transfonter.org-20201003-085137/FuturaPT-Book.woff2") format("woff2"),
+      url("../font/transfonter.org-20201003-085137/FuturaPT-Book.woff") format("woff");
+   font-weight: normal;
+   font-style: normal;
+   font-display: swap;
+}
+@font-face {
+   font-family: "Futura PT";
+   src: url("../font/transfonter.org-20201003-085137/FuturaPT-Bold.woff2") format("woff2"),
+      url("../font/transfonter.org-20201003-085137/FuturaPT-Bold.woff") format("woff");
+   font-weight: bold;
+   font-style: normal;
+   font-display: swap;
+}
+
+/* Обнуляющий стиль */
+*,
+*::before,
+*::after {
+   margin: 0;
+   padding: 0;
+   border: 0;
+   box-sizing: border-box;
+}
+*:focus {
+   outline: none;
+}
+ol li,
+ul li {
+   list-style: none;
+}
+a,
+a:visited {
+   text-decoration: none;
+}
+a:hover {
+   text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+   font-weight: inherit;
+   font-size: inherit;
+}
+img {
+   vertical-align: top;
+}
+
+body {
+   min-height: 100%;
+   font-size: 14px;
+   line-height: 1;
+   font-family: Poppins;
+}
+
+/*---------*/
+.wrapper {
+   overflow: hidden;
+   min-height: 590px;
+   background: url("../img/bg.png") 660px 10% no-repeat;
+   max-width: 1500px;
+   margin: 0 auto;
+}
+
+.header {
+}
+
+.logo img {
+   margin: 24px 113px 0px 165px;
+}
+.menu {
+   display: inline-block;
+   padding: 35px 0px 0px 0px;
+}
+.list li {
+   display: inline-block;
+}
+.menu a {
+   margin: 0px 20px;
+   padding: 4px 4px;
+   font-family: "Futura PT";
+   font-style: 500;
+   font-weight: normal;
+   font-size: 16px;
+   line-height: 23px;
+   color: #00293f;
+}
+.link:hover {
+   color: rgba(108, 189, 78);
+   /*border-bottom: 0.5px solid rgb(54, 165, 224, 0.3);*/
+   border: 0.5px solid rgba(108, 189, 78);
+   border-left: none;
+   border-right: none;
+}
+
+.link:active {
+   color: rgba(108, 189, 78, 0.6);
+   border-left: 0.5px solid rgba(108, 189, 78, 0.6);
+   border-top: none;
+   border-bottom: none;
+}
+
+.list li:last-child {
+   margin: 0px 80px 0px 0px;
+}
+.button {
+   display: inline-block;
+   min-width: 160px;
+   height: 44px;
+   background: linear-gradient(360deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0) 51.04%), #70c851;
+   border-radius: 3px;
+   font-family: Gilroy;
+   font-size: 16px;
+   line-height: 19px;
+   padding: 12px 0px 0px 30px;
+   /*margin: 0px 0px 0px 110px;*/
+}
+.button span {
+   display: inline-block;
+   color: #ffffff;
+   padding: 0px 30px 0px 0px;
+   background: url("../img/icon/Arrow\ 1\ \(Stroke\).svg") right no-repeat;
+}
+
+.button:hover {
+   background: linear-gradient(360deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0) 51.04%), rgba(108, 189, 78);
+   text-shadow: 0.2px 1px 1px #ffff;
+   box-shadow: -1px 2px 0px #0000005d;
+}
+
+.button:active {
+   margin: 3px 0px 0px 110px;
+   box-shadow: 0px 1px 2px 0.5px #0000005d;
+}
+
+.headercontent {
+   display: inline-block;
+   max-width: 700px;
+}
+
+.title {
+   font-size: 40px;
+   line-height: 60px;
+   color: #182c51;
+   margin: 120px 0px 0px 165px;
+}
+.title span {
+   font-weight: 800;
+   font-size: 40px;
+   line-height: 60px;
+   color: #182c51;
+}
+
+.contentbutton {
+   max-width: 169px;
+   height: 50px;
+   background: #70c851;
+   border-radius: 3px;
+   padding: 13px 0px 0px 45px;
+   margin: 36px 0px 160px 165px;
+   color: #ffffff;
+}
+.contentbutton span {
+   font-size: 16px;
+   line-height: 24px;
+   color: #ffffff;
+}
+.contentbutton:hover {
+   padding: 14px 0px 0px 45px;
+   box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.5);
+}
+
+.contentbutton:hover::after {
+   content: "→";
+   color: rgba(255, 255, 255, 0.7);
+   margin: 0px 10px 0px 4px;
+   font-size: 16px;
+}
+
+.contentbutton:active {
+   background: #70c851;
+   opacity: 0.8;
+}
+
+.contentbutton:hover .contentbutton a {
+   font-size: 16px;
+   line-height: 24px;
+   display: inline-block;
+   color: #ffffff;
+}
+.content {
+   min-height: 256px;
+   background: #f8f8f8;
+   margin: 0px 0px 60px 0px;
+}
+.contentitem {
+   max-width: 1500px;
+   margin: 0 auto;
+   padding: 47px 0px 0px 165px;
+}
+.contentsubtitle {
+   font-style: normal;
+   font-weight: 600;
+   font-size: 28px;
+   line-height: 42px;
+
+   color: #00293f;
+   margin: 0px 0px 21px 0px;
+}
+
+.contetnabout {
+   max-width: 730px;
+   display: inline-block;
+   max-width: 730px;
+   padding: 45px 0px 45px 0px;
+   margin: 0px 125px 0px 0px;
+}
+.contenttext {
+   font-style: normal;
+   font-weight: normal;
+   font-size: 16px;
+   line-height: 24px;
+
+   color: #5a5a5a;
+   margin: 0px 0px 20px 0px;
+}
+
+.listitem {
+   display: inline-block;
+   font-family: Gilroy;
+   font-style: normal;
+   font-weight: 500;
+   font-size: 18px;
+   line-height: 21px;
+   color: #182c51;
+}
+.listitem li {
+   margin: 0px 10px 36px 0px;
+}
+
+.listitem *:last-child {
+   margin-bottom: 0px;
+}
+
+.listitem li::before {
+   content: "";
+   width: 11px;
+   height: 11px;
+   background-color: #70c851;
+   display: inline-block;
+   margin: 0px 9px 0px 0px;
+}
+
+.listitem li:hover::before {
+   background-color: rgba(113, 200, 81, 0.8);
+   box-shadow: 1px 0px 3px 0px rgba(0, 0, 0, 0.5);
+   width: 12px;
+   height: 12px;
+   margin: 0px 8px 0px 0px;
+}
+
+.listitem li:hover {
+   font-size: 20px;
+   letter-spacing: -0.8px;
+}
+
+.wrapperblog {
+   max-width: 1500px;
+   margin: 0 auto 30px auto;
+}
+.subtitleblog {
+   margin: 0px 0px 47px 165px;
+}
+
+.subtitleblog a {
+   font-weight: 800;
+   font-size: 40px;
+   line-height: 60px;
+   color: #182c51;
+}
+.subtitleblog:hover {
+   text-decoration: underline;
+}
+.contentblog {
+   margin: 0px 0px 0px 165px;
+}
+.img {
+   margin: 0px 30px 0px 0px;
+}
+.textblog {
+   display: inline-block;
+   max-width: 437px;
+   max-height: 199px;
+}
+.textsmall {
+   font-weight: 600;
+   font-size: 14px;
+   line-height: 21px;
+   text-transform: uppercase;
+   margin: 0px 0px 9px 0px;
+}
+.textsmall a {
+   color: #5a5a5a;
+}
+.textsmall:hover {
+   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.308);
+}
+.textbig {
+   font-weight: 600;
+   font-size: 28px;
+   line-height: 42px;
+   color: #00293f;
+   margin: 0px 0px 8px 0px;
+}
+.textmedium {
+   font-size: 16px;
+   line-height: 24px;
+   color: #5a5a5a;
+   margin: 0px 0px 17px 0px;
+}
+.textlist {
+   padding: 0px 30px 0px 0px;
+}
+.textlist a {
+   font-size: 13px;
+   line-height: 19px;
+   color: #5a5a5a;
+}
+.textdata,
+.textvisit,
+.textcomment {
+   display: inline-block;
+   padding: 0px 30px 0px 0px;
+}
+.textdata::before {
+   content: "";
+   background: url("../img/icon/🔹\ data.svg") no-repeat;
+   padding: 0px 22px 0px 0px;
+}
+
+.textdata a:hover {
+   color: #182c51;
+   text-decoration: underline;
+   display: inline-block;
+}
+
+.textvisit::before {
+   content: "";
+   background: url("../img/icon/visit.svg") 0 4px no-repeat;
+   padding: 0px 20px 0px 0px;
+}
+
+.textvisit a:hover {
+   color: #182c51;
+   text-decoration: underline;
+}
+.textcomment {
+   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+   /*letter-spacing: 0.5px;*/
+}
+.textcomment::before {
+   content: "";
+   background: url("../img/icon/comment.svg") 0 4px no-repeat;
+   padding: 0px 22px 0px 0px;
+}
+
+.textcomment a:hover {
+   color: #182c51;
+   text-decoration: underline;
+}
+
+.wrapperfooter {
+   background-color: #F8F8F8;
+}
+.contentfooter {
+   background: url("../img/bgfooter.png") 90% 40%  no-repeat;
+   max-width: 1500px;
+   margin: 0 auto;
+   min-height: 600px;
+}
+.subtitlefooter{
+   margin: 0px 0px 11px 165px;
+
+ }
+.subtitlefooter {
+   padding: 80px 0px 0px 0px;
+   font-weight: 600;
+   font-size: 28px;
+   line-height: 42px;
+   color: #00293F;
+}
+.textfooter {
+   margin: 0px 0px 80px 165px;
+   max-width: 590px; 
+   height: 70px;
+   font-size: 16px;
+   line-height: 24px;
+
+   color: #5A5A5A;
+   overflow: hidden;
+}
+
+
+.listfooter {
+   margin: 0px 0px 0px 165px;
+  
+}
+.listfooter li{
+   margin: 0px 0px 25px 0px;
+}
+.local {
+   width: 255px;
+   height: 72px;
+   font-size: 16px;
+   line-height: 24px;
+   color: #000000;
+
+}
+.call{
+   width: 157px;
+   height: 24px;
+   font-size: 16px;
+   line-height: 24px;
+   color: #000000;
+   display: inline-block;
+}
+.email {
+   font-size: 16px;
+   line-height: 24px;
+   color: #000000;
+}
+
